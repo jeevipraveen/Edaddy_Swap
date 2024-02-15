@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edaddy_manipage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background_color"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/agentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:text="Swaps"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_20" />
+            <ImageView
+                android:id="@+id/filter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:src="@drawable/filter"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/dash_eneargy"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_25"
+            android:layout_marginEnd="@dimen/dp_25">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:scaleType="fitXY"
+                            android:layout_marginEnd="@dimen/dp_5"
+                            android:src="@drawable/swap_dashboard"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/roboto"
+
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:text="Swaps"/>
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/swap_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm_bold"
+                        android:layout_weight="0.75"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:gravity="center"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:text="41"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+                <ImageView
+
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/dashboard_line"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/energy"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:text="Energy"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/energy_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm_bold"
+                        android:layout_weight="0.75"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:gravity="center"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:text="15002 KW"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <ImageView
+
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/dashboard_line"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    android:layout_height="match_parent">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            android:src="@drawable/clock"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:text="Duration"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/duration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm_bold"
+                        android:layout_weight="0.75"
+                        android:gravity="center"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:text="180 hrs"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hedaer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background=" #423026"
+            android:visibility="visible"
+            android:layout_marginTop="15dp">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_25"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/swapworkin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="7dp"
+                    android:fontFamily="@font/roboto"
+                    android:paddingBottom="7dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/squre"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:text="Swaps"/>
+                <TextView
+                    android:id="@+id/swap_unwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:text="Swaps"/>
+                <TextView
+                    android:id="@+id/attendance1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Attendance"/>
+                <TextView
+                    android:id="@+id/attendance_working"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:background="@drawable/squre"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:text="Attendance"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/swaps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:background="@drawable/back2"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="35dp"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/swap_1history"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="35dp"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/attendance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/back2"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="35dp"
+                    android:layout_height="match_parent">
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/filter_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:background="@drawable/back2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/close_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:contentPadding="3dp"
+                    app:cardCornerRadius="@dimen/dp_10">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:text="Filter applied"/>
+                    <ImageView
+                        android:id="@+id/close_de"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:background="@drawable/close2"
+                        android:layout_width="20dp"
+
+                        android:layout_height="20dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/filter_ans"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="35dp"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="bottom"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+
+        <ImageView
+            android:id="@+id/dashboard"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/dasboard_hmoe"/>
+
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+
+
+            android:src="@drawable/dasboard_map"/>
+        <ImageView
+            android:id="@+id/batterswap"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:id="@+id/swap_history"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/active_history"/>
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/dasboard_profile"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/batterswap3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/qr_dashbord2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="bottom"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+
+    <color name="orange">#6DBC45</color>
+    <color name="orange_light">#8BC34A</color>
+    <color name="grey">#B5B5B5</color>
+    <color name="warm_grey">#989898</color>
+    <color name="black_10">#19000000</color>
+    <color name="brownish_grey">#666666</color>
+    <color name="pinkish_grey">#cdcdcd</color>
+    <color name="white">#ffffff</color>
+    <color name="white_two">#ffffff</color>
+    <color name="warm_grey_two">#797979</color>
+    <color name="black_10_25">#40000000</color>
+    <color name="pale_grey">#eaf1f7</color>
+    <color name="red">#da100b</color>
+    <color name="transparent_cc">#00FFFFFF</color>
+    <color name="green_g2">#54B45B</color>
+    <color name="green_g1">#84C154</color>
+    <color name="bg_grey">#C5C2C2</color>
+    <color name="grey_list1">#595959</color>
+    <color name="grey_list2">#C6C6C6</color>
+    <color name="overlayShadow">#66000000</color>
+    <color name="color_pay_sel">#C9F695</color>
+
+    <color name="edaddy_back"> #705241</color>
+
+    <color name="back_shado"> #EFF2F3</color>
+
+    <color name="edaddy_manipage">#705241</color>
+
+
+<!--    #445963-->
+
+<!--    #-->
+    #EFF8E3
+
+    <color name="payment_uncoment">#808080</color>
+    <color name="swaping_text">#B6C3CA</color>
+
+    <color name="voucher_card">#D3F4EB</color>
+    <color name="card_color"> #DFF0F7</color>
+    <color name="dash"> #1AFFFFFF</color>
+    <color name="disount_color">#008D63</color>
+
+
+
+
+
+    <color name="otp_color">#144DDC</color>
+</resources>

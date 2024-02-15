@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_txt_bg"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/phone_code"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:fontFamily="@font/ibm_semi"
+                    android:gravity="center"
+                    android:maxLength="5"
+                    android:src="@drawable/ic_icon_flag"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+
+                    android:gravity="center"
+
+                    android:src="@drawable/ic_icon_drop" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/pinkish_grey"></View>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_15"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/userNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:background="@color/transparent_cc"
+                        android:focusable="true"
+                        android:hint="Search Customer"
+                        android:imeOptions="actionDone"
+                        android:longClickable="false"
+                        android:maxLength="20"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/warm_grey_two"
+                        android:textColorHint="@color/warm_grey"
+                        android:textIsSelectable="false"
+                        android:textSize="@dimen/sp_16" />
+
+
+                    <ImageView
+                        android:id="@+id/icon_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_10"
+                        android:src="@drawable/ic_icon_search"
+                        app:tint="@color/orange" />
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/no_customer_records"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_5"
+                android:visibility="gone">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/ibm_semi"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:singleLine="false"
+                    android:text="Customer Not Found"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/customer_records"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_5"
+                android:visibility="gone">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/customerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm_bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="false"
+                        android:text="William Smith"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/sp_16" />
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/customerID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:fontFamily="@font/ibm_regular"
+                            android:gravity="center"
+                            android:singleLine="false"
+                            android:text="ID : WS57892(50000XOF)"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+
+                    </FrameLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_25"
+                        android:layout_marginRight="@dimen/dp_25"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/ic_icon_vehicles"
+                                    android:drawablePadding="@dimen/dp_5"
+                                    android:drawableTint="@color/orange"
+                                    android:fontFamily="@font/ibm_semi"
+                                    android:padding="2dp"
+                                    android:singleLine="false"
+                                    android:text="Vehicle"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp" />
+
+
+                                <TextView
+                                    android:id="@+id/vehicle_type"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/dp_15"
+                                    android:fontFamily="@font/ibm_regular"
+                                    android:padding="2dp"
+                                    android:singleLine="false"
+                                    android:text="Commando"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginStart="@dimen/dp_25"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginEnd="@dimen/dp_25"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:background="@color/bg_grey"
+                        android:visibility="gone"></View>
+
+                    <EditText
+                        android:id="@+id/reason_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:background="@drawable/edit_txt_bg"
+                        android:focusable="true"
+                        android:hint="Reason"
+                        android:imeOptions="actionDone"
+                        android:inputType="textMultiLine"
+                        android:longClickable="false"
+                        android:maxLength="100"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/warm_grey_two"
+                        android:textColorHint="@color/warm_grey"
+                        android:textIsSelectable="false" />
+
+
+                    <LinearLayout
+                        android:id="@+id/btn_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_40"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/btn_cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_bg_green"
+                            android:fontFamily="@font/ibm_semi"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dp_25"
+                            android:paddingTop="@dimen/dp_8"
+                            android:paddingRight="@dimen/dp_25"
+                            android:paddingBottom="@dimen/dp_10"
+                            android:text="Cancel Pre Booking"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cancelHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_25"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:fontFamily="@font/ibm_regular"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:singleLine="false"
+                    android:text="Recent Cancellations"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/nor_records"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/background_bg"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp_5"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/ibm_semi"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:text="No Transactions Found"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_16" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarSize="5dp"
+                        android:scrollbarThumbVertical="@android:color/darker_gray" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</FrameLayout>
+
+

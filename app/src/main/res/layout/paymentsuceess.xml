@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/edaddy_manipage"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/agentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:fontFamily="@font/ibm_bold"
+                android:gravity="start"
+                android:text="Swaps"
+                android:layout_gravity="center"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_20" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/edaddy_manipage"
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/filter"
+                android:layout_width="60dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/paymentsucess"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ibm_bold"
+                    android:gravity="start"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="Payment was successful!"
+                    android:layout_gravity="center"
+                    android:textColor="#35454C"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:textSize="@dimen/dp_20" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ibm_bold"
+                    android:gravity="start"
+                    android:text="₹210"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:textSize="24sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="From wallet balance"
+                    android:layout_gravity="center"
+                    android:textColor="@color/payment_uncoment"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp" />
+            <LinearLayout
+                android:id="@+id/wallet"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/battery_result"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                tools:ignore="Orientation"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Date &amp; time"
+                        android:layout_gravity="center"
+                        android:textColor="@color/payment_uncoment"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="29/9/2023 10:30AM"
+                        android:layout_gravity="center"
+                        android:textColor="@color/payment_uncoment"
+                        android:textSize="16dp" />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Ref ID"
+                        android:layout_gravity="center"
+                        android:textColor="@color/payment_uncoment"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ED256787454ID"
+                        android:layout_gravity="center"
+                        android:textColor="@color/payment_uncoment"
+                        android:textSize="16dp" />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        app:cardCornerRadius="@dimen/dp_50"
+        android:backgroundTint="@color/edaddy_back"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_gravity="bottom">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Done"
+            android:fontFamily="@font/ibm_bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/bg_header_grad"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <ImageView
+        android:id="@+id/closeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:tint="@color/white"
+        android:padding="@dimen/dp_15"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@drawable/ic_icon_close" />
+
+
+    <RelativeLayout
+        android:id="@+id/view_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end">
+
+
+        <TextView
+            android:id="@+id/nav_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dp_15"
+            android:fontFamily="@font/ibm_bold"
+            android:gravity="center"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="Benin Test11"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_15" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nav_profile_name"
+            >
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_profile_bg"></ImageView>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/nav_profile_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/user_profiles" />
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.2755174875089222" />
+        <entry key="app/src/main/res/drawable-ldpi/date_icon.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable-v24/app_icon2.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable-v24/back_foreground.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable-v24/battery_active_bar.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable-v24/energy.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable-v24/filtter.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable-v24/filtter_2.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable-v24/filtter_dismis.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable-v24/ic_select.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable-v24/splach2.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable-v24/splach_image.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable-v24/swap_curen_location.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable-v24/swp_curent_loct.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/active_home.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/active_profile.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/back.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/back2.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/back_background.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/back_foreground.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/background_bg.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/background_color.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/batter_prsnt_full.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/batterscaner_iocn.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/battery100.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/battery_25.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/battery_50.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/battery_result.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/bg_profile_gradient.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/bg_white.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/bg_white_sel.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/bodder_line.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/bottom_sheet.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/button_bg_green.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/button_bg_pay.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/clock.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/curve_edit_text.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/custom_alert_success.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/dasboard_hmoe.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/dasboard_map.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/dasboard_profile.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/dashboard_collor.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/dearction_loct.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/eadit.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/edady.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/edit_txt_bg.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/energy.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/filter.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/ic_ant_design_eye_invisible_filled.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/ic_internet.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/ic_menu_camera.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/ic_no_data.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/ic_profile_bg.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/ic_unselect.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/login_card.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/login_location.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/navigation_item_bg.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/old_battery_sucess.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/otp.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/password_visible_invisible.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/payment_card.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/phone.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/play.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/rectangle.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/spinner_bg.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/splach3.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/splach_name.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/splach_name_heder.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/squre.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/ststin_detsil_bsck.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/swap_dashboard.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/swap_result_qr.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/swapp_success_background.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/vouchercard.xml" value="0.1995" />
+        <entry key="app/src/main/res/layout-land/activity_dashboard.xml" value="0.32890218098958335" />
+        <entry key="app/src/main/res/layout-land/first_adapter.xml" value="0.37238135955536555" />
+        <entry key="app/src/main/res/layout-land/location_adapter.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-land/swapstatios_dialog.xml" value="0.37238135955536555" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_login.xml" value="0.28203125" />
+        <entry key="app/src/main/res/layout-sw600dp/payment_confarmection.xml" value="0.2861672611969877" />
+        <entry key="app/src/main/res/layout-sw600dp/swapstatios_dialog.xml" value="0.18046875" />
+        <entry key="app/src/main/res/layout/activity_battery_details.xml" value="0.30464135021097044" />
+        <entry key="app/src/main/res/layout/activity_battery_swapping.xml" value="0.31385642737896496" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.27758178710937503" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.23984985351562504" />
+        <entry key="app/src/main/res/layout/activity_payment_wallet.xml" value="0.30854700854700856" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.6163106804220086" />
+        <entry key="app/src/main/res/layout/activity_scanned_barcode.xml" value="0.30854700854700856" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.29335452076103397" />
+        <entry key="app/src/main/res/layout/activity_swap_historry_array.xml" value="0.28340440194068917" />
+        <entry key="app/src/main/res/layout/activity_swap_staction.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/activity_swap_staction_details.xml" value="0.22505078782582705" />
+        <entry key="app/src/main/res/layout/activity_swaping_histtory.xml" value="0.2624755859375" />
+        <entry key="app/src/main/res/layout/activity_swapping_payment.xml" value="0.22682291666666668" />
+        <entry key="app/src/main/res/layout/activity_wallet_payment.xml" value="0.297008547008547" />
+        <entry key="app/src/main/res/layout/booking_history.xml" value="0.711700439453125" />
+        <entry key="app/src/main/res/layout/bottom.xml" value="0.31669006347656253" />
+        <entry key="app/src/main/res/layout/bottom2.xml" value="0.30782385634886705" />
+        <entry key="app/src/main/res/layout/bottom_sheet_layout.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/cancel_history.xml" value="0.16075245831551946" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.29628046173578454" />
+        <entry key="app/src/main/res/layout/countrycodeselection.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/custom_view_success.xml" value="0.29628046173578454" />
+        <entry key="app/src/main/res/layout/first_adapter.xml" value="0.30782385634886705" />
+        <entry key="app/src/main/res/layout/first_staction_adapter.xml" value="0.30782385634886705" />
+        <entry key="app/src/main/res/layout/fourth_adapter.xml" value="0.30782385634886705" />
+        <entry key="app/src/main/res/layout/fourth_staction_adapter.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/fragment_prebooking.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/locatio_adapter.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/map_adapter.xml" value="0.30782385634886705" />
+        <entry key="app/src/main/res/layout/map_adapter2.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/otp_verification.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/payment_confarmection.xml" value="0.2180633544921875" />
+        <entry key="app/src/main/res/layout/paymentsuceess.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/paytype_cell.xml" value="0.30451632496025277" />
+        <entry key="app/src/main/res/layout/second_adpter.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/second_staction_adapter.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/swap_histry_array_dialog.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/swaping_history_adapter.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/swaping_history_adapter2.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/swapstatios_dialog.xml" value="0.29628046173578454" />
+        <entry key="app/src/main/res/layout/third_adapter.xml" value="0.30782385634886705" />
+        <entry key="app/src/main/res/layout/third_staction_adapter.xml" value="0.30867892261650276" />
+        <entry key="app/src/main/res/layout/toast_layout.xml" value="0.30854700854700856" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

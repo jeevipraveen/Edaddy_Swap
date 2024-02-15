@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:orderInCategory="0"
+            android:id="@+id/nav_booking_history"
+
+            android:title="Collection History" />
+<!--        <item-->
+<!--            android:orderInCategory="0"-->
+<!--            android:id="@+id/nav_cancel_history"-->
+
+<!--            android:title="Cancellation History" />-->
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:orderInCategory="1"
+            android:id="@+id/nav_feed_back"
+
+            android:title="Feedback" />
+
+
+        <item
+            android:orderInCategory="1"
+            android:id="@+id/nav_support_us"
+
+            android:title="Support" />
+
+        <item
+            android:orderInCategory="1"
+            android:id="@+id/nav_about_us"
+
+            android:title="About us" />
+
+    </group>
+
+
+    <item
+        android:orderInCategory="2"
+        android:id="@+id/nav_about_logout"
+        android:itemBackground="@drawable/button_bg_pay"
+        android:title="Logout" />
+
+
+</menu>
