@@ -15,6 +15,8 @@ object PrefConstant {
     var MAT_STATUS_UUID: String = "MAT_STATUS_UUID"
     var APP_VERSION: String = "v1.0"
     var MAT_STACTION_ID: String = "MAT_STACTION_ID"
+    var CURENT_LAT: String = "CURENT_LAT"
+    var CURENT_LANG: String = "CURENT_LANG"
 
     var TOKEN:String="TOKEN"
 

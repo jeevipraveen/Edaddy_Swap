@@ -27,7 +27,11 @@ import com.mauto.myapplication.utils.ToastUtils
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import com.mauto.myapplication.home.model.SwapLocationData
+import com.mauto.myapplication.login.livedata.LoginLiveData
 import com.mauto.myapplication.login.model.FiltterRequest
+import com.mauto.myapplication.login.model.LocationResponse
+import com.mauto.myapplication.login.model.LoginRequest
 import com.mauto.myapplication.rideCustomOnClickListener
 import com.mauto.myapplication.swapingHistory.adapter.SwapHistoryAdapter
 import com.mauto.myapplication.swapingHistory.adapter.SwapingHistoryAdapter2
@@ -35,6 +39,9 @@ import com.mauto.myapplication.swapingHistory.adapter.SwapingHistoryFiltterAdapt
 import com.mauto.myapplication.swapingHistory.model.SawapFiltterHistoryResponse
 import com.mauto.myapplication.swapingHistory.model.SwapingArrayResponse
 import com.mauto.myapplication.swapingHistory.model.SwapingFiltteringArrayResponse
+import com.mauto.myapplication.utils.MAutoApplication
+import com.mauto.myapplication.utils.MAutoSharedPref
+import com.mauto.myapplication.utils.PrefConstant
 import kotlinx.android.synthetic.main.activity_battery_swapping.*
 import kotlinx.android.synthetic.main.activity_swaping_histtory.*
 import kotlinx.android.synthetic.main.activity_swaping_histtory.batterswap3
@@ -49,6 +56,7 @@ import kotlin.collections.ArrayList
 class SwapingHisttoryActivity : AppCompatActivity() {
     lateinit var pd: ProgressDialog
     lateinit var model : SawpPaymentHistory
+    lateinit var model2 : LoginLiveData
     private lateinit var mContext: Activity
     var date_from:String=""
     var cal = Calendar.getInstance()
@@ -76,6 +84,7 @@ class SwapingHisttoryActivity : AppCompatActivity() {
         setContentView(R.layout.activity_swaping_histtory)
 
         model = ViewModelProvider(this)[SawpPaymentHistory::class.java]
+        model2 = ViewModelProvider(this)[LoginLiveData::class.java]
         pd = ProgressDialog(this)
         pd.setMessage("Loading...")
         mContext = this@SwapingHisttoryActivity
@@ -85,6 +94,13 @@ class SwapingHisttoryActivity : AppCompatActivity() {
         triplist = findViewById(R.id.swap_1history)
         triplist2= findViewById(R.id.filter_ans)
           makePayment()
+        val curent_lat =
+            MAutoSharedPref.getAppPrefs(MAutoApplication.getInstance().context).getStringValue(
+                PrefConstant.CURENT_LAT)
+        val curent_lagt =
+            MAutoSharedPref.getAppPrefs(MAutoApplication.getInstance().context).getStringValue(
+                PrefConstant.CURENT_LANG)
+        loginSuccess(curent_lat,curent_lagt)
 
         attendance1.setOnClickListener{
 //            hedaer.visibility= View.GONE
@@ -208,8 +224,33 @@ class SwapingHisttoryActivity : AppCompatActivity() {
         val v_number = contentView.findViewById(R.id.v_number)as TextInputEditText
         val B_number = contentView.findViewById(R.id.B_number)as TextInputEditText
         val locat = contentView.findViewById(R.id.locat)as TextInputEditText
+        val arttyu = contentView.findViewById(R.id.arttyu)as Spinner
 
+        val payType = MAutoSharedPref.getAppPrefs(mContext).getDarction()
+        val swapLocations = listOf(
+            SwapLocationData(id ="",
+                code = "",
+                name = "",
+                contact_number = "",
+                country_code = "",
+                image = "",
+                geolocation = "",
+                lat = "",
+                lng = "",
+                total_batteries = "",
+                status = "",
+                charging_batteries = "",
+                available_batteries = "",
+                total_swaps_no = "",
+                total_swaps_amount = "",
+                total_energy_served = "",
+                total_swap_duration = ""))
 
+        val stationNames = swapLocations.map { it.name }
+
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, stationNames)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        arttyu.adapter = adapter
 
         ////        val Filterclick = contentView.findViewById(R.id.Filterclick) as Button
 //        var vehicle_number_textinput=contentView.findViewById(R.id.vehicle_number_textinput) as TextInputEditText
@@ -488,6 +529,81 @@ class SwapingHisttoryActivity : AppCompatActivity() {
         txt.getEditText()!!.setText(datevalue)
 
     }
+    private fun loginSuccess(curent_lat: String, curent_lagt: String) {
+        try {
+            val imm: InputMethodManager =
+                getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+
+//        val split = defaultflag.split(",")
+        var request: LoginRequest = LoginRequest(curent_lat, curent_lagt)
+
+        //Declaring View model
+        if(model2==null)
+            model2 = ViewModelProvider(this)[LoginLiveData::class.java]
+        pd.show()
+        //Calling API from Observer
+        model2.loginlocation(request)
+            ?.observe(this, Observer { this.setUserStatus(it) })
+//            ?.observe(this, Observer { this.setUserStatus(it) })
+
+
+    }
+    private fun setUserStatus(userStatus: LocationResponse?){
+        if (userStatus!!.status.equals("1")) {
+            if (pd != null)
+                pd.dismiss()
+
+//            val SwapLocationData = userStatus?.response
+//            val swapLocations = listOf(
+//                SwapLocationData(id ="",
+//                    code = "",
+//                    name = "",
+//                    contact_number = "+",
+//                    country_code = "",
+//                    image = "",
+//                    geolocation = "",
+//                    lat = "",
+//                    lng = "",
+//                    total_batteries = "",
+//                    status = "Active",
+//                    charging_batteries = "",
+//                    available_batteries = "",
+//                    total_swaps_no = "",
+//                    total_swaps_amount = "",
+//                    total_energy_served = "",
+//                    total_swap_duration = ""))
+//
+//
+//            val stationNames = swapLocations.map { it.name }
+//
+//            val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, stationNames)
+//            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+//            spinner.adapter = adapter
+////            MAutoSharedPref.getStactionList(mContext).saveLocationlist(userStatus?.response)
+//
+
+
+
+        } else  if (userStatus!!.status.equals("0")){
+            ToastUtils.showToast(applicationContext, "Error")
+        }
+        else {
+            if (pd != null)
+                pd.dismiss()
+            MAutoSharedPref.getAppPrefs(applicationContext).saveBooleanValue(
+                PrefConstant.LOGIN_STATUS,
+                false)
+
+            ToastUtils.showToast(applicationContext, "Error")
+        }
+    }
+
+
 
     fun isDateValid():Boolean{
         if (datevalue.isEmpty()){

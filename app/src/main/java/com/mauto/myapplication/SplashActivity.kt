@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.mauto.myapplication.home.HomePageActivity
 import com.mauto.myapplication.login.LoginActivity
@@ -24,6 +25,8 @@ class SplashActivity : AppCompatActivity() {
             val sCache =
                 MAutoSharedPref.getAppPrefs(MAutoApplication.getInstance().context)
                     .getBooleanValue(PrefConstant.LOGIN_STATUS)
+
+            Log.d("jhdbfjkb","$sCache")
             if (sCache)
                 loginFromSession()
             else

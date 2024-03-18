@@ -4,11 +4,14 @@ import android.app.Dialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.style.UnderlineSpan
 import android.util.DisplayMetrics
 import android.view.Gravity
 import android.view.View
 import android.view.Window
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.cardview.widget.CardView
 import com.mauto.myapplication.R
 import com.mauto.myapplication.utils.ToastUtils
@@ -24,6 +27,23 @@ class SwappingPaymentActivity : AppCompatActivity() {
         var cash = findViewById<LinearLayout>(R.id.cash)
         var qr = findViewById<LinearLayout>(R.id.qr)
         var wallet = findViewById<LinearLayout>(R.id.wallet)
+        var  swapamint = findViewById<TextView>(R.id.swapamint)
+        var dis = findViewById<TextView>(R.id.dis)
+        var remove = findViewById<TextView>(R.id.remove)
+        val mString = "Swap amount"
+        val mSpannableString = SpannableString(mString)
+        mSpannableString.setSpan(UnderlineSpan(), 0, mSpannableString.length, 0)
+        swapamint.text = mSpannableString
+
+        val mString2 = "Discount"
+        val mSpannableString2 = SpannableString(mString2)
+        mSpannableString2.setSpan(UnderlineSpan(), 0, mSpannableString2.length, 0)
+        dis.text=mSpannableString2
+
+        val mString3 = "Remove"
+        val mSpannableString3 = SpannableString(mString3)
+        mSpannableString3.setSpan(UnderlineSpan(), 0, mSpannableString3.length, 0)
+        remove.text=mSpannableString3
 
         bac.setOnClickListener {
             finish()

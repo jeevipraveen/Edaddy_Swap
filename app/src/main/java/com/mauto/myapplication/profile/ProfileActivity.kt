@@ -61,11 +61,14 @@ class ProfileActivity : AppCompatActivity() {
         logoutFromApp()
 
         logut.setOnClickListener {
-            MAutoSharedPref.getAppPrefs(MAutoApplication.getInstance().applicationContext).clearAllSharedPrefs()
-            PrefConstant.LOGIN_STATUS
-//            MAutoSharedPref.getAppPrefs(applicationContext).saveBooleanValue(
-//                PrefConstant.LOGIN_STATUS,
-//                false)
+            MAutoSharedPref.getAppPrefs(
+                MAutoApplication.getInstance().applicationContext
+            ).clearAllSharedPrefs()
+
+//            MAutoSharedPref.getAppPrefs(
+//                MAutoApplication.getInstance().applicationContext
+//            ). clearSharedPrefs()
+
             ToastUtils.showToast(applicationContext, "Logged out successfully")
             val i = Intent(this, LoginActivity::class.java)
             startActivity(i)

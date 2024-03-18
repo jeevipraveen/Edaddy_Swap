@@ -2,7 +2,6 @@ package com.mauto.myapplication
 
 import android.Manifest
 import android.app.ProgressDialog
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
@@ -10,15 +9,14 @@ import android.graphics.Canvas
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.VectorDrawable
 import android.location.Location
+import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -48,7 +46,7 @@ import kotlinx.android.synthetic.main.cancel_history.*
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.gson.Gson
-import java.util.ArrayList
+import java.util.*
 
 class SwapStactionActivity : AppCompatActivity(), OnMapReadyCallback {
     lateinit var pd: ProgressDialog
@@ -247,6 +245,10 @@ class SwapStactionActivity : AppCompatActivity(), OnMapReadyCallback {
         startActivity(i)
 
     }
+    fun track(lat:String?,lng:String?){
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?q=loc:" + lat+ "," +lng))
+        startActivity(intent)
+    }
 
     private fun initrecyclerviews(payType: ArrayList<SwapLocationData>) {
 //        triplist.layoutManager = LinearLayoutManager(this)
@@ -257,6 +259,12 @@ class SwapStactionActivity : AppCompatActivity(), OnMapReadyCallback {
                 val offerTtem = payType[position]
 
                 getpaymentpage(offerTtem.id)
+            }
+        },object : dearcCustomOnClickListener{
+            override fun onItemClickListener(view: View, position: Int, rideid: String) {
+                val latalng = payType[position]
+
+                track(latalng.lat,latalng.lng)
             }
         })
         triplist.adapter = adapter

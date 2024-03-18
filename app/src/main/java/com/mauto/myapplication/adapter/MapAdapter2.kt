@@ -9,6 +9,7 @@ import android.view.ViewGroup
 
 import androidx.recyclerview.widget.RecyclerView
 import com.mauto.myapplication.R
+import com.mauto.myapplication.dearcCustomOnClickListener
 import com.mauto.myapplication.home.model.SwapLocationData
 import com.mauto.myapplication.rideCustomOnClickListener
 import kotlinx.android.synthetic.main.map_adapter.view.*
@@ -19,8 +20,10 @@ import kotlinx.android.synthetic.main.paytype_cell.view.userNumber
 import java.util.ArrayList
 
 
-class MapAdapter2(val context: Context, var countrymodedata: ArrayList<SwapLocationData>,
-                  internal var mCustomOnClickListener: rideCustomOnClickListener
+class MapAdapter2(
+    val context: Context, var countrymodedata: ArrayList<SwapLocationData>,
+    internal var mCustomOnClickListener: rideCustomOnClickListener,
+    internal var mCustomDeractOnClickListener: dearcCustomOnClickListener
 ) :
     RecyclerView.Adapter<MapAdapter2.ViewHolder>() {
 
@@ -32,6 +35,9 @@ class MapAdapter2(val context: Context, var countrymodedata: ArrayList<SwapLocat
         val geolocation =countrymodedata[p1].geolocation
         val status =countrymodedata[p1].status
 
+        val lat = countrymodedata[p1].lat
+        val lng = countrymodedata[p1].lng
+        val latlng = lat+lng
         val available_batteries = countrymodedata[p1].available_batteries
         p0?.stactin?.setText(code+","+geolocation)
 
@@ -51,6 +57,13 @@ class MapAdapter2(val context: Context, var countrymodedata: ArrayList<SwapLocat
                 mCustomOnClickListener.onItemClickListener(p0.itemView, p1, id)
             }
         }
+        p0?.darectin!!.setOnClickListener{
+            countrymodedata[p1].id?.let { id ->
+
+                mCustomDeractOnClickListener.onItemClickListener(p0.itemView, p1,latlng)
+            }
+        }
+
 
     }
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {

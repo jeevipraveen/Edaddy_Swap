@@ -289,6 +289,8 @@ class LoginActivity : AppCompatActivity() {
                         curent_lagt= tvLongitude.text.toString()
                         Log.d("jgfhgd","$curent_lat")
 //                        locationfinder(curent_lat,curent_lat)
+                        MAutoSharedPref.getAppPrefs(applicationContext).saveStringValue(PrefConstant.CURENT_LAT,curent_lat)
+                        MAutoSharedPref.getAppPrefs(applicationContext).saveStringValue(PrefConstant.CURENT_LANG,curent_lagt)
                         loginSuccess(curent_lat, curent_lagt)
 
 
